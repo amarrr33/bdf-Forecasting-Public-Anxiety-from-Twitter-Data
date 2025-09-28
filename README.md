@@ -18,7 +18,7 @@ Anxiety Index = Affect + emo_neg + Negative – emo_pos
 
 Data Processing & Feature Engineering
 
-The notebook (bdf-final-v2.ipynb) implements:
+The notebook implements:
 
 Cleaning & validation of raw tweet-level features
 
