@@ -2,7 +2,7 @@
 
 This project focuses on analyzing and forecasting public anxiety levels derived from Twitter posts. Using LIWC-based linguistic features and engagement metadata, we construct a composite Anxiety Index and apply statistical, machine learning, and deep learning models to predict its future trends.
 
-Dataset Overview
+# Dataset Overview
 
 We used a curated dataset of ~23,000 tweets containing:
 
@@ -16,7 +16,7 @@ The dataset was aggregated into daily time-series (2019–2022) with a derived A
 
 Anxiety Index = Affect + emo_neg + Negative – emo_pos
 
-Data Processing & Feature Engineering
+# Data Processing & Feature Engineering
 
 The notebook implements:
 
@@ -28,7 +28,7 @@ Feature engineering: temporal lags (1,7,30), rolling stats (mean, std), weekday/
 
 Normalization & bias-aware preprocessing (residualization option)
 
-Key Tools & Libraries
+# Key Tools & Libraries
 
 Python: Pandas, NumPy, Scikit-learn, Statsmodels
 
@@ -42,7 +42,7 @@ Team Collaboration
 
 This project was developed collaboratively as part of an academic initiative on forecasting psychological trends using social media data. While the final notebook is consolidated here, multiple steps (EDA, modeling, testing) were conducted in a shared environment.
 
-Collaborators
+# Collaborators
 
 @amarrr33
 
@@ -50,9 +50,9 @@ Collaborators
 
 @Guru1509
 
-Results
+# Results
 
-Best single models:
+##Best single models:
 
 Ridge: RMSE ≈ 0.051, R² ≈ 0.998
 
@@ -60,7 +60,7 @@ SARIMAX: RMSE ≈ 0.052, R² ≈ 0.998
 
 ElasticNet: RMSE ≈ 0.060, R² ≈ 0.997
 
-Ensembles:
+## Ensembles:
 
 Simple (Ridge+SARIMAX+CatBoost): RMSE ≈ 0.095, R² ≈ 0.992
 
@@ -68,7 +68,7 @@ Weighted (val-opt, Ridge+SARIMAX+ElasticNet+XGB+LightGBM): RMSE ≈ 0.052, R² �
 
 Stacking (ElasticNet L2): RMSE ≈ 0.079, R² ≈ 0.995
 
-Other models:
+##Other models:
 
 CatBoost / XGBoost / LightGBM: R² ≈ 0.91–0.96 (strong performers)
 
@@ -76,7 +76,7 @@ ARIMA / Prophet / BiLSTM: Weak, negative R², not recommended for final use
 
 Residuals: White-noise-like, confirming model adequacy.
 
-Purpose
+#Purpose
 
 The aim of this project is to:
 
