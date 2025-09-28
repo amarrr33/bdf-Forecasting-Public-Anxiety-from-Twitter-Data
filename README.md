@@ -68,7 +68,7 @@ Weighted (val-opt, Ridge+SARIMAX+ElasticNet+XGB+LightGBM): RMSE ≈ 0.052, R² �
 
 Stacking (ElasticNet L2): RMSE ≈ 0.079, R² ≈ 0.995
 
-#Other models:
+# Other models:
 
 CatBoost / XGBoost / LightGBM: R² ≈ 0.91–0.96 (strong performers)
 
@@ -76,7 +76,7 @@ ARIMA / Prophet / BiLSTM: Weak, negative R², not recommended for final use
 
 Residuals: White-noise-like, confirming model adequacy.
 
-#Purpose
+# Purpose
 
 The aim of this project is to:
 
