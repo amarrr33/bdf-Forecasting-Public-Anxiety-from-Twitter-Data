@@ -52,7 +52,7 @@ This project was developed collaboratively as part of an academic initiative on 
 
 # Results
 
-##Best single models:
+#Best single models:
 
 Ridge: RMSE ≈ 0.051, R² ≈ 0.998
 
@@ -60,7 +60,7 @@ SARIMAX: RMSE ≈ 0.052, R² ≈ 0.998
 
 ElasticNet: RMSE ≈ 0.060, R² ≈ 0.997
 
-## Ensembles:
+# Ensembles:
 
 Simple (Ridge+SARIMAX+CatBoost): RMSE ≈ 0.095, R² ≈ 0.992
 
@@ -68,7 +68,7 @@ Weighted (val-opt, Ridge+SARIMAX+ElasticNet+XGB+LightGBM): RMSE ≈ 0.052, R² �
 
 Stacking (ElasticNet L2): RMSE ≈ 0.079, R² ≈ 0.995
 
-##Other models:
+#Other models:
 
 CatBoost / XGBoost / LightGBM: R² ≈ 0.91–0.96 (strong performers)
 
